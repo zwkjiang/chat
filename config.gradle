@@ -1,0 +1,57 @@
+ext{
+    android = [
+
+    ]
+    dependenciesVersion=[
+            okhttp:"3.11.0",
+            interceptor:"3.10.0",
+            retrofit:"2.4.0",
+            gson:"2.4.0",
+            rxjava2:"2.4.0",
+            rxjava:"2.2.6",
+            rxandroid:"2.1.1",
+            rxlifecycle:"2.2.1",
+            material:"1.1.0",
+            design:"29.0.0",
+            banner:"1.4.10",
+            glide:"4.5.0",
+            room_version:"2.2.5",
+            recyclerview:"28.0.0",
+            SmartRefreshLayout:"1.1.0",
+            multidex:"1.0.3",
+            arouter:"1.5.0",
+            legacy:"1.0.0",
+            arouter_compiler:"1.2.2",
+            tablayout:"2.0.2@aar",
+            fresco:"0.12.0"
+    ]
+
+    dependencies = [
+            okhttp:"com.squareup.okhttp3:okhttp:$dependenciesVersion.okhttp",
+            interceptor: "com.squareup.okhttp3:logging-interceptor:$dependenciesVersion.interceptor",
+            retrofit2: "com.squareup.retrofit2:retrofit:$dependenciesVersion.retrofit",
+            gson: "com.squareup.retrofit2:converter-gson:$dependenciesVersion.gson",
+            rxjava2: "com.squareup.retrofit2:adapter-rxjava2:$dependenciesVersion.rxjava2",
+            rxjava: "io.reactivex.rxjava2:rxjava:$dependenciesVersion.rxjava",
+            rxandroid: "io.reactivex.rxjava2:rxandroid:$dependenciesVersion.rxandroid",
+            rxlifecycle2:"com.trello.rxlifecycle2:rxlifecycle-components:$dependenciesVersion.rxlifecycle",
+            material:"com.google.android.material:material:$dependenciesVersion.material",
+            design:"com.android.support:design:$dependenciesVersion.design",
+            banner:"com.youth.banner:banner:$dependenciesVersion.banner",
+            glide:"com.github.bumptech.glide:glide:$dependenciesVersion.glide",
+            room:"androidx.room:room-runtime:$dependenciesVersion.room_version",
+            roomcompiler:"androidx.room:room-compiler:$dependenciesVersion.room_version",
+            recyclerview:"com.android.support:recyclerview-v7:$dependenciesVersion.recyclerview",
+            SmartRefreshLayout:"com.scwang.smartrefresh:SmartRefreshLayout:$dependenciesVersion.SmartRefreshLayout",
+            SmartRefreshHeader:"com.scwang.smartrefresh:SmartRefreshHeader:$dependenciesVersion.SmartRefreshLayout",
+            multidex:"com.android.support:multidex:$dependenciesVersion.multidex",
+            arouter: "com.alibaba:arouter-api:$dependenciesVersion.arouter",
+            legacy:"androidx.legacy:legacy-support-v4:$dependenciesVersion.legacy",
+            arouter_compiler:"com.alibaba:arouter-compiler:$dependenciesVersion.arouter_compiler",
+            tablayout:"com.flyco.tablayout:FlycoTabLayout_Lib:$dependenciesVersion.tablayout",
+            BaseRecyclerViewAdapterHelper:"com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22",
+            fresco:"com.facebook.fresco:fresco:$dependenciesVersion.fresco"
+    ]
+
+
+}

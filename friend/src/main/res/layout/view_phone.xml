@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/icon_phone"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:roundAsCircle="true"
+        >
+    </com.facebook.drawee.view.SimpleDraweeView>
+        <TextView
+            android:id="@+id/name_phone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="名字"
+            android:layout_marginStart="10dp"
+            />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/add"
+        android:scaleType="center"
+        android:layout_marginStart="180dp"
+        />
+</LinearLayout>

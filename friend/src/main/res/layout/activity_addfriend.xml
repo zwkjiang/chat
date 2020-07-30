@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <include layout="@layout/view_toolbar"></include>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mediumaquamarine"
+            />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_addFriend"
+            android:background="@color/lightseagreen"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/yellow"
+            ></com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_addFriend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</layout>

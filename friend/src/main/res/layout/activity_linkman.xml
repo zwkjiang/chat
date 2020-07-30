@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/view_toolbar"></include>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_linkman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/table_linkman"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lightseagreen"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabTextColor="@color/white"
+        >
+    </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_linkman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+</layout>

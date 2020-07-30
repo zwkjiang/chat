@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whitesmoke"
+        >
+        <include layout="@layout/view_toolbar"></include>
+        <EditText
+            android:id="@+id/seek_msg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_backgroud"
+            android:layout_margin="10dp"
+            android:hint="搜索"
+            android:paddingStart="20dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</layout>

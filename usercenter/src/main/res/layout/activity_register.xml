@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <import type="com.example.usercenter.view.RegisterActivity" />
+        <import type="com.example.usercenter.viewmodel.RegisterViewModel" />
+        <variable
+            name="viewmodel"
+            type="RegisterViewModel"/>
+        <variable
+            name="register"
+            type="RegisterActivity" />
+
+    </data>
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.LoginActivity"
+        android:orientation="vertical"
+        >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:text="注册系统"
+       android:textColor="#000000"
+       android:textSize="22sp"
+       android:gravity="center"
+       />
+    <EditText
+        android:id="@+id/name_register"
+        style="@style/Login_edit"
+        android:hint="请输入账户"
+        android:inputType="number"
+        android:text="@={viewmodel.userEntity.username}"
+        />
+    <EditText
+        android:id="@+id/password_register"
+        style="@style/Login_edit"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:text="@={viewmodel.userEntity.pwd}"
+        />
+    <Button
+        android:id="@+id/go_register"
+        style="@style/Login_btn"
+        android:text="注册"
+        android:onClick="@{register::onClick}"
+         />
+    <TextView
+        android:id="@+id/login_register"
+        style="@style/Login_tv"
+        android:text="去登陆"
+        android:onClick="@{register::onClick}"
+        />
+    </LinearLayout>
+</layout>

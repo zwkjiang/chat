@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+def dependencie=rootProject.ext.dependencies
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    api dependencie.okhttp
+    api dependencie.interceptor
+    api dependencie.retrofit2
+    api dependencie.gson
+    api dependencie.rxjava2
+    api dependencie.rxjava
+    api dependencie.rxandroid
+    api dependencie.rxlifecycle2
+    api dependencie.banner
+    api dependencie.glide
+    api dependencie.room
+    api dependencie.recyclerview
+    api dependencie.SmartRefreshLayout
+    api dependencie.SmartRefreshHeader
+    api dependencie.material
+    api dependencie.design
+    api dependencie.multidex
+    api dependencie.arouter
+    api dependencie.legacy
+    api dependencie.tablayout
+    api dependencie.BaseRecyclerViewAdapterHelper
+    api dependencie.fresco
+}
+repositories {
+    mavenCentral()
+}

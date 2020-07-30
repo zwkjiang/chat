@@ -1,0 +1,1 @@
+include ':app', ':common', ':arouter', ':core', ':imagloader', ':storage', ':net', ':usercenter', ':home', ':wight', ':CommonLibrary', ':XmppLibrary', ':friend', ':message'
